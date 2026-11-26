@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Mohamed Yacine GUIROUS | BTS SIO SLAM</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            400: '#4ade80',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            900: '#14532d',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-brand-500 selection:text-slate-950">
+
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 bg-slate-950/90 backdrop-blur border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#accueil" class="font-black text-xl tracking-wider text-white">
+                MY<span class="text-brand-500">.GUIROUS</span>
+            </a>
+            <nav class="hidden md:flex items-center gap-7 font-medium text-sm text-slate-300">
+                <a href="#accueil" class="hover:text-brand-400 transition">Accueil</a>
+                <a href="#parcours" class="hover:text-brand-400 transition">Parcours</a>
+                <a href="#certifications" class="hover:text-brand-400 transition">Certifications</a>
+                <a href="#competences" class="hover:text-brand-400 transition">Compétences E5</a>
+                <a href="#projets" class="hover:text-brand-400 transition">Stage & Projets</a>
+                <a href="#veille" class="hover:text-brand-400 transition">Veille Technologique</a>
+            </nav>
+            <a href="#contact" class="bg-brand-600 hover:bg-brand-500 text-white font-bold px-5 py-2.5 rounded-xl text-sm transition shadow-lg shadow-brand-600/20">
+                Me contacter
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="py-24 lg:py-32 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(#22c55e_1px,transparent_1px)] [background-size:28px_28px] opacity-10"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7">
+                <div class="inline-flex items-center gap-2 bg-brand-500/10 border border-brand-500/20 text-brand-400 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-6">
+                    <span class="w-2 h-2 rounded-full bg-brand-400 animate-pulse"></span>
+                    Étudiant 2ème année BTS SIO — Option SLAM | Institut F2I
+                </div>
+                <h1 class="text-4xl sm:text-6xl font-black tracking-tight mb-6 leading-tight">
+                    Mohamed Yacine <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-emerald-300">GUIROUS</span>
+                </h1>
+                <p class="text-lg text-slate-300 mb-8 leading-relaxed max-w-2xl">
+                    Développeur Full-Stack junior de 20 ans basé à <strong>Paris</strong>. Issu d'un Baccalauréat Mathématiques et actuellement en 2ème année de BTS SIO SLAM à l'<strong>Institut F2I</strong>, je conçois des applications web dynamiques, sécurisées et orientées métier.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#projets" class="bg-brand-600 hover:bg-brand-500 text-white font-bold px-7 py-3.5 rounded-xl transition shadow-lg shadow-brand-600/20">
+                        Découvrir mes réalisations <i class="fa-solid fa-arrow-right ml-2"></i>
+                    </a>
+                    <a href="#certifications" class="bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-200 font-bold px-7 py-3.5 rounded-xl transition">
+                        Mes Certifications
+                    </a>
+                </div>
+            </div>
+
+            <div class="lg:col-span-5">
+                <div class="bg-slate-900/90 border border-slate-800 p-8 rounded-3xl shadow-2xl relative">
+                    <div class="absolute -top-3 -right-3 bg-brand-500 text-slate-950 font-black text-xs px-3.5 py-1 rounded-full uppercase">Profil SLAM</div>
+                    <h3 class="text-lg font-bold text-white mb-6 flex items-center gap-2">
+                        <i class="fa-solid fa-id-card text-brand-400"></i> Fiche d'identité & Stack
+                    </h3>
+                    <ul class="space-y-3 text-sm text-slate-300 mb-6 border-b border-slate-800 pb-6">
+                        <li class="flex justify-between"><span class="text-slate-500">Âge :</span> <span class="font-semibold text-white">20 ans</span></li>
+                        <li class="flex justify-between"><span class="text-slate-500">Localisation :</span> <span class="font-semibold text-white">Paris, France</span></li>
+                        <li class="flex justify-between"><span class="text-slate-500">École :</span> <span class="font-semibold text-white">Institut F2I (Paris)</span></li>
+                        <li class="flex justify-between"><span class="text-slate-500">Diplôme :</span> <span class="font-semibold text-white">Baccalauréat Mathématiques</span></li>
+                    </ul>
+                    <div class="grid grid-cols-2 gap-3 text-xs">
+                        <div class="bg-slate-950 p-3.5 rounded-xl border border-slate-800">
+                            <span class="block font-bold text-brand-400 mb-1">Back-End</span> PHP, POO, Python, SQL
+                        </div>
+                        <div class="bg-slate-950 p-3.5 rounded-xl border border-slate-800">
+                            <span class="block font-bold text-brand-400 mb-1">Front-End</span> HTML5, CSS3, Tailwind, JS
+                        </div>
+                        <div class="bg-slate-950 p-3.5 rounded-xl border border-slate-800">
+                            <span class="block font-bold text-brand-400 mb-1">Bases de Données</span> MySQL, phpMyAdmin, MCD/MLD
+                        </div>
+                        <div class="bg-slate-950 p-3.5 rounded-xl border border-slate-800">
+                            <span class="block font-bold text-brand-400 mb-1">Cybersécurité</span> Cisco Cyber, ANSSI SecNum
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parcours Académique -->
+    <section id="parcours" class="py-20 bg-slate-900/50 border-y border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="text-brand-400 font-bold text-xs tracking-widest uppercase">Formation</span>
+                <h2 class="text-3xl font-black text-white mt-1">Mon Parcours Scolaire</h2>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-slate-900 p-8 rounded-2xl border border-slate-800 relative">
+                    <span class="text-xs font-bold text-brand-400 bg-brand-500/10 px-3 py-1 rounded-full">2025 – 2027 (En cours)</span>
+                    <h3 class="text-xl font-bold text-white mt-4 mb-1">BTS SIO — Option SLAM</h3>
+                    <p class="text-sm text-brand-400 font-semibold mb-3">Institut F2I — Paris</p>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Spécialisation Solutions Logicielles et Applications Métiers : conception de bases de données relationnelles, développement web full-stack, cybersécurité applicative et gestion de projet agile.
+                    </p>
+                </div>
+                <div class="bg-slate-900 p-8 rounded-2xl border border-slate-800 relative">
+                    <span class="text-xs font-bold text-slate-400 bg-slate-800 px-3 py-1 rounded-full">Diplôme obtenu</span>
+                    <h3 class="text-xl font-bold text-white mt-4 mb-1">Baccalauréat Mathématiques</h3>
+                    <p class="text-sm text-slate-400 font-semibold mb-3">Série Scientifique / Mathématiques</p>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Acquisition d'une solide rigueur logique, algorithmique et analytique appliquée aujourd'hui à la modélisation de données et à la programmation.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Cybersécurité (Noms uniquement) -->
+    <section id="certifications" class="py-20 bg-slate-950 border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="text-brand-400 font-bold text-xs tracking-widest uppercase">Cybersécurité & Bonnes Pratiques</span>
+                <h2 class="text-3xl font-black text-white mt-1">Mes Certifications Officielles</h2>
+                <p class="text-slate-400 text-sm mt-2">Validation des compétences en sécurité informatique et protection des données.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Certification Cisco -->
+                <div class="bg-slate-900 border border-slate-800 rounded-3xl p-8 flex flex-col justify-between shadow-lg">
+                    <div>
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-12 h-12 rounded-2xl bg-sky-500/10 text-sky-400 flex items-center justify-center text-2xl">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs font-bold uppercase tracking-wider text-sky-400">Cisco Networking Academy</span>
+                                <h3 class="text-xl font-black text-white">Introduction to Cybersecurity</h3>
+                            </div>
+                        </div>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                            Obtenue le 21 janvier 2026. Maîtrise des fondamentaux de la cybersécurité, analyse des cybermenaces, des attaques courantes et des stratégies de protection des systèmes d'information.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Attestation ANSSI SecNumacadémie -->
+                <div class="bg-slate-900 border border-slate-800 rounded-3xl p-8 flex flex-col justify-between shadow-lg">
+                    <div>
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-12 h-12 rounded-2xl bg-brand-500/10 text-brand-400 flex items-center justify-center text-2xl">
+                                <i class="fa-solid fa-user-shield"></i>
+                            </div>
+                            <div>
+                                <span class="text-xs font-bold uppercase tracking-wider text-brand-400">ANSSI — SecNumacadémie</span>
+                                <h3 class="text-xl font-black text-white">Attestation de Suivi (4 Modules)</h3>
+                            </div>
+                        </div>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                            Obtenue le 17 janvier 2026. Validation réussie des modules : Panorama de la SSI (90%), Sécurité de l'authentification (94%), Sécurité sur Internet (96%) et Sécurité du poste de travail (88%).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compétences E5 -->
+    <section id="competences" class="py-20 bg-slate-900/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-brand-400 font-bold text-xs tracking-widest uppercase">Référentiel BTS SIO</span>
+                <h2 class="text-3xl font-black text-white mt-1">Compétences Développées (Épreuve E5)</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-slate-900 p-8 rounded-2xl border border-slate-800">
+                    <div class="text-brand-400 text-2xl font-black mb-4">01</div>
+                    <h3 class="font-bold text-lg text-white mb-3">Concevoir & Développer</h3>
+                    <ul class="space-y-2.5 text-sm text-slate-400">
+                        <li><i class="fa-solid fa-check text-brand-400 mr-2"></i>Rédaction de cahier des charges fonctionnel</li>
+                        <li><i class="fa-solid fa-check text-brand-400 mr-2"></i>Modélisation et administration MySQL</li>
+                        <li><i class="fa-solid fa-check text-brand-400 mr-2"></i>Développement Back-End PHP / PDO & Front-End JS</li>
+                    </ul>
+                </div>
+                <div class="bg-slate-900 p-8 rounded-2xl border border-slate-800">
+                    <div class="text-brand-400 text-2xl font-black mb-4">02</div>
+                    <h3 class="font-bold text-lg text-white mb-3">Sécuriser & Maintenir</h3>
+                    <ul class="space-y-2.5 text-sm text-slate-400">
+                        <li><i class="fa-solid fa-check text-brand-400 mr-2"></i>Protection contre les injections SQL (requêtes préparées)</li>
+                        <li><i class="fa-solid fa-check text-brand-400 mr-2"></i>Protection XSS et gestion des sessions utilisateurs</li>
+                        <li><i class="fa-solid fa-check text-brand-400 mr-2"></i>Application des normes ANSSI & Cisco en développement</li>
+                    </ul>
+                </div>
+                <div class="bg-slate-900 p-8 rounded-2xl border border-slate-800">
+                    <div class="text-brand-400 text-2xl font-black mb-4">03</div>
+                    <h3 class="font-bold text-lg text-white mb-3">Accompagner & Documenter</h3>
+                    <ul class="space-y-2.5 text-sm text-slate-400">
+                        <li><i class="fa-solid fa-check text-brand-400 mr-2"></i>Rédaction de rapports techniques et guides d'installation</li>
+                        <li><i class="fa-solid fa-check text-brand-400 mr-2"></i>Planification sur 7 semaines et suivi des livrables</li>
+                        <li><i class="fa-solid fa-check text-brand-400 mr-2"></i>Interface d'administration intuitive pour le client</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stage & Projets Personnels -->
+    <section id="projets" class="py-20 bg-slate-900/50 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-brand-400 font-bold text-xs tracking-widest uppercase">Réalisations Professionnelles & Personnelles</span>
+                <h2 class="text-3xl font-black text-white mt-1">Stage de 1ère Année & Projets</h2>
+            </div>
+
+            <!-- Stage 1ère Année Mis en Avant (Smart Polymer Colors) -->
+            <div class="bg-gradient-to-br from-slate-900 to-slate-800 border border-brand-500/30 rounded-3xl p-8 sm:p-10 mb-12 shadow-xl">
+                <div class="flex flex-wrap justify-between items-center gap-4 mb-6">
+                    <span class="bg-brand-500 text-slate-950 font-black text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider">
+                        <i class="fa-solid fa-briefcase mr-1"></i> Stage 1ère Année (7 Semaines)
+                    </span>
+                    <span class="text-xs font-semibold text-slate-400">EURL SMART POLYMER COLORS / METAL</span>
+                </div>
+                <h3 class="text-2xl sm:text-3xl font-black text-white mb-4">Refonte Web & Plateforme B2B — Smart Polymer</h3>
+                <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
+                    Conception et développement complet d'une plateforme web moderne pour l'entreprise industrielle Smart Polymer. Le projet intègre un catalogue dynamique connecté à MySQL, un <strong>simulateur interactif de dosage industriel (2% à 5%)</strong>, un système de demande d'échantillons en ligne, un formulaire de contact enregistré en base de données, ainsi qu'un <strong>back-office d'administration CRUD</strong> sécurisé.
+                </p>
+
+                <div class="bg-slate-950 border border-slate-800 p-5 rounded-2xl mb-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-brand-500/10 text-brand-400 flex items-center justify-center text-xl shrink-0">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <div>
+                            <span class="block font-bold text-sm text-white">Application Web Smart Polymer</span>
+                            <span class="text-xs text-slate-400">Accès direct au site de démonstration local</span>
+                        </div>
+                    </div>
+                    <a href="http://localhost/spc_site_php_mysql/index.php" target="_blank" class="bg-brand-600 hover:bg-brand-500 text-white text-xs font-bold px-5 py-3 rounded-xl transition flex items-center gap-2 shrink-0 shadow-lg shadow-brand-600/20">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i> Ouvrir le site du projet
+                    </a>
+                </div>
+
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-slate-950 border border-slate-700 text-brand-400 text-xs font-semibold px-3 py-1 rounded-lg">PHP 8 / PDO</span>
+                    <span class="bg-slate-950 border border-slate-700 text-brand-400 text-xs font-semibold px-3 py-1 rounded-lg">MySQL</span>
+                    <span class="bg-slate-950 border border-slate-700 text-brand-400 text-xs font-semibold px-3 py-1 rounded-lg">JavaScript ES6</span>
+                    <span class="bg-slate-950 border border-slate-700 text-brand-400 text-xs font-semibold px-3 py-1 rounded-lg">Tailwind CSS</span>
+                </div>
+            </div>
+
+            <!-- Projets Personnels (Dont Clone Leboncoin mis en valeur) -->
+            <h3 class="text-xl font-bold text-white mb-6">Projets Personnels & Ateliers</h3>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Projet Leboncoin (Mis en valeur avec lien local) -->
+                <div class="bg-slate-900 border border-orange-500/40 rounded-2xl p-7 flex flex-col justify-between shadow-lg relative">
+                    <div class="absolute -top-3 right-4 bg-orange-500 text-slate-950 font-black text-[10px] px-3 py-1 rounded-full uppercase">Interactif</div>
+                    <div>
+                        <div class="w-11 h-11 rounded-xl bg-orange-500/10 text-orange-400 flex items-center justify-center text-xl mb-5">
+                            <i class="fa-solid fa-store"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-white mb-2">Clone Leboncoin (Petites Annonces)</h4>
+                        <p class="text-slate-400 text-xs leading-relaxed mb-4">
+                            Plateforme de petites annonces inspirée du boncoin : inscription/connexion sécurisée, dépôt d'annonces avec photos, filtrage par catégories et gestion en base de données MySQL.
+                        </p>
+                        
+                        <!-- Bouton d'accès au clone Leboncoin local -->
+                        <div class="mb-6">
+                            <a href="http://localhost/clone_leboncoin/index.php" target="_blank" class="w-full bg-orange-600 hover:bg-orange-500 text-white text-xs font-bold py-2.5 px-4 rounded-xl transition flex items-center justify-center gap-2 shadow-md">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Tester le projet Leboncoin
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-950 text-slate-300 text-[11px] px-2.5 py-1 rounded">PHP / MySQL</span>
+                        <span class="bg-slate-950 text-slate-300 text-[11px] px-2.5 py-1 rounded">CRUD</span>
+                    </div>
+                </div>
+
+                <!-- Projet QCM -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-7 flex flex-col justify-between hover:border-slate-700 transition">
+                    <div>
+                        <div class="w-11 h-11 rounded-xl bg-sky-500/10 text-sky-400 flex items-center justify-center text-xl mb-5">
+                            <i class="fa-solid fa-list-check"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-white mb-2">Application Web QCM Interactif</h4>
+                        <p class="text-slate-400 text-xs leading-relaxed mb-6">
+                            Système d'évaluation en ligne avec tirage de questions aléatoires, calcul automatique du score en temps réel, historique des résultats et correction détaillée.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-950 text-slate-300 text-[11px] px-2.5 py-1 rounded">PHP / SQL</span>
+                        <span class="bg-slate-950 text-slate-300 text-[11px] px-2.5 py-1 rounded">JavaScript</span>
+                    </div>
+                </div>
+
+                <!-- Projet Chat -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl p-7 flex flex-col justify-between hover:border-slate-700 transition">
+                    <div>
+                        <div class="w-11 h-11 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl mb-5">
+                            <i class="fa-solid fa-comments"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-white mb-2">Messagerie Instantanée (Chat)</h4>
+                        <p class="text-slate-400 text-xs leading-relaxed mb-6">
+                            Application de discussion en ligne permettant l'échange de messages entre utilisateurs authentifiés avec horodatage et rafraîchissement asynchrone.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-slate-950 text-slate-300 text-[11px] px-2.5 py-1 rounded">PHP / MySQL</span>
+                        <span class="bg-slate-950 text-slate-300 text-[11px] px-2.5 py-1 rounded">AJAX / JS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Veille Technologique (Épreuve E4) - Développée -->
+    <section id="veille" class="py-20 bg-slate-950 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-400 font-bold text-xs tracking-widest uppercase">Épreuve E4 — Veille Technologique</span>
+                <h2 class="text-3xl font-black text-white mt-1 mb-3">L'Intelligence Artificielle Générative dans le Développement Logiciel et la Cybersécurité</h2>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Analyse approfondie de l'impact des modèles génératifs et des assistants conversationnels (LLM) sur les pratiques de développement web et les nouveaux enjeux de sécurité des applications.
+                </p>
+            </div>
+
+            <!-- Grille détaillée -->
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <!-- Axe 1 -->
+                <div class="bg-slate-900 p-8 rounded-3xl border border-slate-800">
+                    <div class="w-12 h-12 rounded-2xl bg-brand-500/10 text-brand-400 flex items-center justify-center text-xl font-bold mb-6">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-3">1. Transformation du Code & Productivité</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed mb-4">
+                        L'intégration d'outils comme GitHub Copilot ou ChatGPT révolutionne le quotidien du développeur SLAM :
+                    </p>
+                    <ul class="space-y-2 text-xs text-slate-300">
+                        <li><i class="fa-solid fa-check text-brand-400 mr-2"></i>Génération automatique de requêtes SQL complexes et de structures CRUD.</li>
+                        <li><i class="fa-solid fa-check text-brand-400 mr-2"></i>Rédaction accélérée de tests unitaires et de documentation technique.</li>
+                        <li><i class="fa-solid fa-check text-brand-400 mr-2"></i>Réduction du code boilerplate au profit de la logique métier.</li>
+                    </ul>
+                </div>
+
+                <!-- Axe 2 -->
+                <div class="bg-slate-900 p-8 rounded-3xl border border-slate-800">
+                    <div class="w-12 h-12 rounded-2xl bg-sky-500/10 text-sky-400 flex items-center justify-center text-xl font-bold mb-6">
+                        <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-3">2. Risques & Vulnérabilités Applicatives</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed mb-4">
+                        Malgré leurs avantages, les IA génératives introduisent de nouveaux vecteurs de risque soulignés par l'OWASP :
+                    </p>
+                    <ul class="space-y-2 text-xs text-slate-300">
+                        <li><i class="fa-solid fa-triangle-exclamation text-amber-400 mr-2"></i>Introduction involontaire de failles (injections SQL, XSS) dans le code généré.</li>
+                        <li><i class="fa-solid fa-triangle-exclamation text-amber-400 mr-2"></i>Risque d'hallucination syntaxique nécessitant une relecture humaine rigoureuse.</li>
+                        <li><i class="fa-solid fa-triangle-exclamation text-amber-400 mr-2"></i>Exposition accidentelle de données sensibles ou de clés API d'entreprise.</li>
+                    </ul>
+                </div>
+
+                <!-- Axe 3 -->
+                <div class="bg-slate-900 p-8 rounded-3xl border border-slate-800">
+                    <div class="w-12 h-12 rounded-2xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl font-bold mb-6">
+                        <i class="fa-solid fa-satellite-dish"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-3">3. Méthodologie & Outils de Veille</h3>
+                    <p class="text-slate-400 text-xs leading-relaxed mb-4">
+                        Mise en place d'un processus rigoureux de curation et d'analyse continue :
+                    </p>
+                    <ul class="space-y-2 text-xs text-slate-300">
+                        <li><i class="fa-solid fa-check text-purple-400 mr-2"></i>Agrégation de flux RSS spécialisés (ANSSI, OWASP, GitHub Blog, Medium).</li>
+                        <li><i class="fa-solid fa-check text-purple-400 mr-2"></i>Alertes automatisées via Google Alerts sur les failles LLM.</li>
+                        <li><i class="fa-solid fa-check text-purple-400 mr-2"></i>Rédaction de fiches de synthèse trimestrielles pour l'épreuve E4.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Encadré Conclusion Veille -->
+            <div class="bg-slate-900 border border-slate-800 p-8 rounded-3xl text-center max-w-4xl mx-auto">
+                <h4 class="font-bold text-white text-base mb-2"><i class="fa-solid fa-lightbulb text-amber-400 mr-2"></i> Conclusion de la Veille</h4>
+                <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                    L'intelligence artificielle n'a pas vocation à remplacer le développeur, mais à devenir un co-pilote puissant. La maîtrise des bases de la programmation (acquise en BTS SIO SLAM) et des principes de cybersécurité (certifications Cisco & ANSSI) reste indispensable pour auditer, valider et sécuriser le code produit.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20 bg-slate-900 border-t border-slate-800">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="text-brand-400 font-bold text-xs tracking-widest uppercase">Contact</span>
+            <h2 class="text-3xl font-black text-white mt-1 mb-4">Discutons de vos projets ou d'une opportunité</h2>
+            <p class="text-slate-400 text-sm mb-8">Disponible à Paris pour échanger autour du développement web, logiciel ou d'une future alternance / poursuite d'études.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="mailto:yacineguirous@gmail.com" class="bg-brand-600 hover:bg-brand-500 text-white font-bold px-8 py-4 rounded-xl transition shadow-lg shadow-brand-600/20">
+                    <i class="fa-solid fa-envelope mr-2"></i> yacineguirous@gmail.com
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-950 text-slate-500 py-10 border-t border-slate-800 text-xs text-center">
+        <p>© 2026 Mohamed Yacine GUIROUS — Portfolio BTS SIO SLAM (Institut F2I Paris).</p>
+    </footer>
+
+</body>
+</html>
